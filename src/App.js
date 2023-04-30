@@ -1,9 +1,15 @@
+
 import React, { useEffect, useState } from "react";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Dropdown from "react-bootstrap/Dropdown";
 
-const App = () => {
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import Login from "./Login.jsx";
+import SignUp from "./Signup.jsx";
+
+const Dashboard = () => {
   const [properties, setUsers] = useState([]);
 
   // Add Property Modal
@@ -212,7 +218,7 @@ const updatePropertyData = (property) =>
             </Modal>
             
             <li className="nav-item ">
-              <a className="nav-link text-white" href="/">
+              <a className="nav-link text-white" href="/Signup">
                 Signout
               </a>
             </li>
@@ -250,6 +256,20 @@ const updatePropertyData = (property) =>
           </div>
         )}
       </header>
+    </div>
+  );
+};
+
+const App = () => {
+  return (
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 };
