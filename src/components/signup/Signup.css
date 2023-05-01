@@ -32,10 +32,14 @@
   border-color: gray;
 }
 .radio-label {
-    display: flex;
-    align-items: center;
-  }
-  .radio-button {
-    margin-right: 10px; 
-  }
-  
+  display: flex;
+  align-items: center;
+}
+.radio-button {
+  margin-right: 10px;
+}
+
+.button-signup {
+  padding: 2px 5px;
+  background-color: rgb(191, 191, 218);
+}

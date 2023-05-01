@@ -1,5 +1,6 @@
 import React from "react";
 import "./Signup.css";
+import { Link } from "react-router-dom";
 
 export default function Signup() {
   return (
@@ -33,15 +34,28 @@ export default function Signup() {
         </label>
         <input type="text" name="address" id="address" className="input-box" />
         <label for="age1" className="radio-label">
-  <input type="radio" id="age1" name="userType" value="buyer" className="radio-button" />
-  Buyer
-</label>
+          <input
+            type="radio"
+            id="age1"
+            name="userType"
+            value="buyer"
+            className="radio-button"
+          />
+          Buyer
+        </label>
 
-<label for="age2" className="radio-label">
-  <input type="radio" id="age2" name="userType" value="seller" className="radio-button" />
-  Seller
-</label>
-
+        <label for="age2" className="radio-label">
+          <input
+            type="radio"
+            id="age2"
+            name="userType"
+            value="seller"
+            className="radio-button"
+          />
+          Seller
+        </label>
+        <button className="button-signup mt-2">SignUp</button>
+        <div className='mt-1'>Already have an account?  <Link to="/">Login</Link></div>
       </form>
     </div>
   );
