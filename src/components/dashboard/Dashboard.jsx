@@ -97,7 +97,7 @@ const Dashboard = () => {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link text-white" href="/">
+              <a className="nav-link text-white" href="/dashboard">
                 All properties
               </a>
             </li>
