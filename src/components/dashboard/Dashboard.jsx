@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Modal from "react-bootstrap/Modal";
 import Dropdown from "react-bootstrap/Dropdown";
+import { Link } from "react-router-dom";
 
 const Dashboard = () => {
   const [properties, setUsers] = useState([]);
@@ -211,9 +212,9 @@ const Dashboard = () => {
             </Modal>
 
             <li className="nav-item ">
-              <a className="nav-link text-white" href="/Signup">
-                Signout
-              </a>
+              <Link to="/">
+                <span className="nav-link text-white">Logout</span>
+              </Link>
             </li>
           </ul>
         </div>

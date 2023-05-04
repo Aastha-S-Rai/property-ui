@@ -35,3 +35,7 @@
   padding: 2px 5px;
   background-color: rgb(191, 191, 218);
 }
+
+.mouse-pointer {
+  cursor: pointer;
+}
